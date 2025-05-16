@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Spotify</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Ikonas (Spotify, Facebook, Apple) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Iekļauj Google Fonts ko izmanto Spotify dizainā) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    /* Dizains: tumšs fons, balts teksts, Spotify fonts */
+    body {
+      background-color: #121212;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    /* Pa vidu nolikts centrēts bloks */
+    .container {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+    /* Spotify logo un virsraksts */
+    .logo {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .logo i {
+      font-size: 60px;
+      color: #1DB954;
+    }
+    .logo h1 {
+      margin: 10px 0 0 0;
+    }
+    /* Pogu stils */
+    .btn {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: not-allowed;  
+      opacity: 0.6; 
+    }
+    /*ikonas vai attēli pogām */
+    .btn i, .btn img {
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+    /*pogu krāsas */
+    .btn-facebook {
+      background-color: #3b5998;
+      color: white;
+    }
+    .btn-apple {
+      background-color: #000;
+      color: white;
+    }
+    .btn-google {
+      background-color: #fff;
+      color: #000;
+    }
+    /* Ievades lauki (e-pasts, parole) */
+    .input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+      background-color: #2a2a2a;
+      color: white;
+    }
+    /* Zaļā login poga */
+    .login-btn {
+      background-color: #1DB954;
+      color: white;
+      font-weight: bold;
+    }
+
+    /* Teksts apakšā "Don't have an account?" */
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .footer a {
+      color: #1DB954;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Spotify logo -->
+    <div class="logo">
+      <i class="fa fa-spotify"></i>
+      <h1>Spotify</h1>
+    </div>
+     <!-- Teksts virs pogām -->
+    <p>To continue, log in to Spotify.</p>
+     <!-- Sociālo tīklu pogas -->
+    <button class="btn btn-google" disabled>
+      <img src="https://img.icons8.com/color/16/000000/google-logo.png"/>Continue with Google
+    </button>
+    <button class="btn btn-facebook" disabled>
+      <i class="fa fa-facebook-square"></i>Continue with Facebook
+    </button>
+    <button class="btn btn-apple" disabled>
+      <i class="fa fa-apple"></i>Continue with Apple
+    </button>
+    <hr style="margin: 20px 0; border-color: #333;">
+       <!-- Ievades lauki -->
+    <input type="text" class="input" placeholder="Email or username" disabled>
+    <input type="password" class="input" placeholder="Password" disabled>
+    <button class="btn login-btn" disabled>Log In</button>
+    <!-- Links apakšā uz reģistrāciju -->
+    <div class="footer">
+      <p>Don't have an account? <a href="#">Sign up for Spotify</a></p>
+    </div>
+  </div>
+</body>
+</html>
